@@ -1,38 +1,164 @@
-.App {
-  text-align: center;
+/* Google Font */
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap');
+
+/* General Styles */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+body {
+    background: linear-gradient(to right, #8360c3, #2ebf91);
+    padding: 20px;
+    display: flex;
+    justify-content: center;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+/* Main Container */
+.container {
+    max-width: 800px;
+    background: #fff;
+    padding: 30px;
+    border-radius: 12px;
+    box-shadow: 0 10px 25px rgba(0, 0, 0, 0.15);
+    transition: 0.3s;
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+/* Header */
+h1, h2 {
+    color: #333;
+    text-align: center;
+    margin-bottom: 15px;
 }
 
-.App-link {
-  color: #61dafb;
+/* Profile Section */
+.profile-info {
+    background: #f8f9fa;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: inset 0 0 5px rgba(0, 0, 0, 0.1);
+    margin-bottom: 20px;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.profile-info p {
+    font-size: 16px;
+    color: #555;
+    margin: 5px 0;
 }
+
+/* Edit Profile Form */
+.edit-profile {
+    background: #e3f2fd;
+    padding: 15px;
+    border-radius: 8px;
+    box-shadow: 0 3px 10px rgba(0, 0, 0, 0.1);
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+}
+
+.edit-profile input {
+    flex: 1;
+    padding: 12px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    font-size: 14px;
+    transition: 0.3s;
+}
+
+.edit-profile input:focus {
+    border-color: #007bff;
+    outline: none;
+    box-shadow: 0 0 5px rgba(0, 123, 255, 0.5);
+}
+
+.edit-profile button {
+    width: 100%;
+    padding: 12px;
+    background: #007bff;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: 0.3s;
+    font-weight: bold;
+}
+
+.edit-profile button:hover {
+    background: #0056b3;
+}
+
+/* Social Media Links */
+.social-media {
+    background: #fff3cd;
+    padding: 15px;
+    border-radius: 8px;
+    margin-top: 15px;
+}
+
+.social-media a {
+    display: flex;
+    align-items: center;
+    color: #333;
+    text-decoration: none;
+    font-weight: bold;
+    margin-bottom: 8px;
+    transition: 0.3s;
+}
+
+.social-media a:hover {
+    color: #007bff;
+    transform: translateX(5px);
+}
+
+/* Reviews Section */
+.reviews {
+    background: #d4edda;
+    padding: 15px;
+    border-radius: 8px;
+    margin-top: 15px;
+    box-shadow: inset 0 0 5px rgba(0, 0, 0, 0.1);
+}
+
+.reviews p {
+    margin: 5px 0;
+    font-size: 14px;
+}
+
+/* Rating Stars */
+.review-rating {
+    font-size: 18px;
+    color: gold;
+}
+
+/* Buttons */
+.btn {
+    display: inline-block;
+    padding: 10px 20px;
+    margin-top: 10px;
+    background: #28a745;
+    color: #fff;
+    border-radius: 5px;
+    text-decoration: none;
+    text-align: center;
+    transition: 0.3s;
+}
+
+.btn:hover {
+    background: #218838;
+}
+
+/* Responsive Design */
+@media (max-width: 600px) {
+    .edit-profile {
+        flex-direction: column;
+    }
+
+    .edit-profile input {
+        width: 100%;
+    }
+}
+
+
